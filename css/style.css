@@ -1,0 +1,142 @@
+/*Estilos: Juan Jose Huiza Huiza*/
+
+@import url('https://fonts.googleapis.com/css2? family=Roboto:wght@400;500&display=swap');
+
+*{
+    font-family: 'Roboto';
+    color: rgb(103, 103, 102);
+}
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 16px;
+    background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+    position: relative;
+}
+.contenedor{
+    width: min(90%, 120rem);
+    margin: 0 auto;
+    /* overflow: hidden; */
+}
+img{
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.formulario{
+    margin: 0 auto;
+    width: 80%;
+    padding: 2rem 1rem;
+    border-radius: 4px;
+    box-shadow: 0 5px 10px rgb(104, 104, 104);
+    background-color: white;
+}
+
+@media(min-width:768px){
+    .formulario{
+        width: 30%;
+    }
+}
+
+#formulario label, #formulario input{
+    display: block;
+    width: 100%;
+}
+
+#formulario label{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+#formulario label:nth-child(1),
+#formulario label:nth-child(2){
+    margin-top: 10px;
+}
+#formulario input{
+    padding: 8px;
+    outline: none;
+    border-radius: 4px;
+}
+#formulario ::placeholder{
+    color: rgb(188, 188, 188);
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 200;
+}
+.mensaje-error{
+    color: tomato;
+    font-size: 14px;
+    padding: 4px 2px;
+}
+.btn-procesar{
+    border-radius: 4px;
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: rgb(14, 115, 209);
+    border: unset;
+    box-shadow: inset 0.1px 1px 10px rgb(133, 133, 154);
+    color: white;
+    cursor: pointer;
+    transition: transform ease .5s;
+}
+.btn-procesar:hover,.btn-limpiar:hover{
+    transform: scale(0.95);
+}
+
+.btn-limpiar{
+    border-radius: 4px;
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: tomato;
+    border: unset;
+    box-shadow: inset 0.1px 1px 10px rgb(133, 133, 154);
+    color: white;
+    cursor: pointer;
+    transition: transform ease .5s;
+}
+
+h1{
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    color: rgb(38, 38, 38);
+    text-shadow: 0 8px 10px rgb(98, 102, 117);
+}
+.centrado{
+    text-align: center;
+}
+.mayuscula{
+    text-transform: uppercase;
+    font-size: 5vw;
+    font-weight: bold;
+}
+.resultado{
+    margin-top: 1.5rem;
+    font-weight: 900;
+    color: darkslategrey;
+}
+
+.opc{
+    border: 1px solid rgb(130, 129, 129);
+    outline: none;
+}
+.input{
+    border: 1px solid gray;
+}
+.input-error{
+    border: 1px solid rgb(209, 47, 41);
+}
+
+.input-validado{
+    border: 1px solid rgb(125, 234, 36);
+}
+
+.input-start{
+    border:1px solid rgb(130, 129, 129);
+}

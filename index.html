@@ -1,0 +1,50 @@
+<!-- Maquetación: Juan Jose Huiza Huiza -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Document</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+<body>
+        <div class="container">
+            <h1 class="centrado mayuscula animate__animated animate__fadeInDown">Operación básica de suma y resta</h1>
+            <form class="formulario animate__animated animate__backInDown" id="formulario">
+                <div id="grupo01">
+                    <label for="idn1" style="text-transform:uppercase;">Campo A:</label>
+                    <input type="text" name="n1" id="idn1" class="input" placeholder="999">
+                </div>
+                
+                <div id="grupo02">
+                    <label for="idn2" style="text-transform:uppercase;">Campo B:</label>
+                    <input type="text" name="n2" id="idn2" class="input" placeholder="99">
+                </div>
+
+                <div>
+                    <label for="idopc" style="text-transform:uppercase;">Opción:</label>
+                    <input type="text" name="opc" id="idopc" class="opc" placeholder="Seleccionar opción">
+                </div>
+
+                <div>
+                    <button style="text-transform: uppercase;" type="button" class="btn-procesar" id="idProcesar">Procesar</button>
+                    <button style="text-transform: uppercase;" type="button" class="btn-limpiar" id="idLimpiar">Limpiar</button>
+                </div>
+            </form>
+
+            
+        </div>
+         
+
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
